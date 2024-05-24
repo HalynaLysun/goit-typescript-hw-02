@@ -4,8 +4,8 @@ import { Images } from "../../types";
 import React from "react";
 
 interface ImageGalleryProps {
-  images: Images;
-  onClick: () => void;
+  images: Images[];
+  onClick: (img: string) => void;
 }
 
 export const ImageGallery: React.FC<ImageGalleryProps> = ({
@@ -18,7 +18,7 @@ export const ImageGallery: React.FC<ImageGalleryProps> = ({
       {images.map((el: Images) => {
         return (
           <li key={el.id}>
-                <ImageCard images={el} onClick={onClick} />
+            <ImageCard images={el} onClick={onClick} />
           </li>
         );
       })}
