@@ -6,7 +6,7 @@ Modal.setAppElement("#root");
 
 interface ImageModalPromis {
   isOpen: boolean;
-  onClick: (imageUrl: string) => void;
+  onClick: () => void;
   imageUrl: string;
 }
 export const ImageModal: React.FC<ImageModalPromis> = ({
