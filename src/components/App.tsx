@@ -36,7 +36,7 @@ export default function App() {
         setLoading(true);
 
         interface Data {
-          results: [];
+          results: Images[];
         }
 
         const data: Data = await fetchImages(inputValue, page);
