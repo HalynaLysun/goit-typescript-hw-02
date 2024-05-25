@@ -25,7 +25,7 @@ export const ImageModal: React.FC<ImageModalPromis> = ({
     <div>
       <Modal
         isOpen={isOpen}
-        onRequestClose={onClick}
+        onRequestClose={() => onClick("")}
         shouldCloseOnOverlayClick={true}
         contentLabel="Example Modal"
         style={{
